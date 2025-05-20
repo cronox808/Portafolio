@@ -1,71 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Portafolio de Jose David Pabón - Desarrollador Backend" />
-        <title>Jose David Pabón | Backend Dev</title>
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
-        body {
-            font-family: 'Orbitron', sans-serif;
-        }
-        </style>
-  </head>
-<body class="bg-black text-white">
-    <header class="bg-gray-900 bg-opacity-80 sticky top-0 z-50 shadow-md">
-      <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 class="text-cyan-400 text-2xl font-bold">Jose David Pabón</h1>
-        <ul class="flex space-x-6 text-white">
-          <li><a href="#sobre-mi" class="hover:text-cyan-400">Sobre mí</a></li>
-          <li><a href="#proyectos" class="hover:text-cyan-400">Proyectos</a></li>
-          <li><a href="#contacto" class="hover:text-cyan-400">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <!-- feat: 🎉 estructura base del portafolio con Tailwind -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portafolio de Jose David Pabón - Desarrollador Backend" />
+  <title>Jose David Pabón | Backend Dev</title>
 
-    <main class="px-6 md:px-16 py-12 space-y-20">
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <section id="hero" class="text-center">
-        <h2 class="text-4xl text-cyan-400 font-bold mb-4">Desarrollador Backend</h2>
-        <p class="text-lg text-gray-300 max-w-xl mx-auto">
-          Apasionado por los videojuegos, el anime y la creación de mundos digitales.
-          Entré a la programación para crear mi propio videojuego y me especializo en el desarrollo backend.
-        </p>
-      </section>
+  <!-- Archivo de estilos personalizados -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 
-    <section id="sobre-mi" class="bg-gray-800 bg-opacity-30 p-8 rounded-xl shadow-lg border border-cyan-500">
-        <h3 class="text-2xl text-red-500 font-bold mb-4">🧠 Habilidades</h3>
-        <ul class="list-disc list-inside space-y-1 text-gray-200">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Docker</li>
-          <li>Git</li>
-          <li>MySQL</li>
-          <li>PHP</li>
-        </ul>
+<body class="bg-black text-cyan-400 font-halo scroll-smooth">
+  <!-- feat: 🎉 header y navegación -->
+  <header class="sticky top-0 z-50 bg-black/80 backdrop-blur-md p-4 flex justify-between items-center border-b border-cyan-500">
+    <h1 class="text-2xl">Jose David Pabón</h1>
+    <nav class="space-x-4">
+      <a href="#sobre-mi" class="hover:text-red-500">Sobre mí</a>
+      <a href="#proyectos" class="hover:text-red-500">Proyectos</a>
+      <a href="#contacto" class="hover:text-red-500">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="space-y-24 px-6 md:px-20 pt-10">
+    <!-- feat: 🧠 sección hero -->
+    <section id="hero" class="transition-opacity duration-700 opacity-0 translate-y-10">
+      <h2 class="text-4xl mb-4">Desarrollador Backend</h2>
+      <p class="max-w-2xl">
+        Apasionado por los videojuegos, el anime y la creación de mundos digitales. Entré a la programación para crear mi propio videojuego. Me especializo en backend.
+      </p>
     </section>
-    
-          <section id="proyectos">
-        <h3 class="text-2xl text-red-500 font-bold mb-6">🛠️ Proyecto destacado</h3>
-        <div class="bg-gray-800 bg-opacity-30 p-6 rounded-xl border border-cyan-500">
-          <h4 class="text-xl text-cyan-400 font-semibold">Slupergin Mod</h4>
-          <p class="text-gray-300 mt-2">Mod para Terraria desarrollado con C# en Visual Studio 2022 y .NET(No se mucho C#, este poryecto es algo personal para aprender y probar).</p>
-          <p class="mt-2 text-gray-400 text-sm">Tecnologías: C#, .NET</p>
-          <a href="https://github.com/cronox808/slupergin-mod" target="_blank" class="mt-4 inline-block bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md">🔗 Ver en GitHub</a>
-        </div>
-      </section>
 
-    <section id="contacto" class="text-center">
-        <h3 class="text-2xl text-red-500 font-bold mb-4">📬 Contacto</h3>
-        <p class="text-gray-300">📧 josedavidpabonpallares@gmail.com</p>
-        <p class="text-gray-300">🐦 @cronox_808</p>
-      </section>
-    </main>
+    <!-- feat: 🧠 sección habilidades -->
+    <section id="sobre-mi" class="transition-opacity duration-700 opacity-0 translate-y-10">
+      <h3 class="text-3xl mb-2">🧠 Habilidades</h3>
+      <ul class="list-disc list-inside">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Docker</li>
+        <li>Git</li>
+        <li>MySQL</li>
+        <li>PHP</li>
+      </ul>
+    </section>
 
-    <footer class="text-center py-4 border-t border-gray-700 mt-10 text-gray-500 text-sm">
-      © 2025 Jose David Pabón. Todos los derechos reservados.
-    </footer>
+    <!-- feat: 🚀 sección proyectos -->
+    <section id="proyectos" class="transition-opacity duration-700 opacity-0 translate-y-10">
+      <h3 class="text-3xl mb-6">🛠️ Proyecto Destacado</h3>
+      <div class="bg-[#0f0f0f] border-2 border-cyan-500 p-6 rounded-xl shadow-lg">
+        <h4 class="text-2xl">Slupergin Mod</h4>
+        <p class="mb-4">Mod para Terraria desarrollado con C# en Visual Studio 2023 y .NET.</p>
+        <a href="https://github.com/cronox808/slupergin-mod" target="_blank" class="inline-block bg-red-600 hover:bg-red-800 text-white px-4 py-2 rounded transition">
+          🔗 Ver en GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- feat: 📬 sección contacto -->
+    <section id="contacto" class="transition-opacity duration-700 opacity-0 translate-y-10">
+      <h3 class="text-3xl mb-4">📬 Contacto</h3>
+      <p>📧 josedavidpabonpallares@gmail.com</p>
+      <p>🐦 @cronox_808</p>
+    </section>
+  </main>
+
+  <!-- chore: 🛠 despliegue GitHub Pages y pie de página -->
+  <footer class="text-center text-gray-500 border-t border-cyan-500 mt-20 py-6">
+    © 2025 Jose David Pabón. Todos los derechos reservados.
+  </footer>
+
+  <!-- feat: ✨ animaciones JS scroll reveal -->
+  <script>
+    const sections = document.querySelectorAll("section");
+
+    function revealOnScroll() {
+      const scrollY = window.pageYOffset;
+      const windowHeight = window.innerHeight;
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (scrollY + windowHeight > sectionTop + 100) {
+          section.classList.add("opacity-100", "translate-y-0");
+          section.classList.remove("opacity-0", "translate-y-10");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+  </script>
 </body>
 </html>
