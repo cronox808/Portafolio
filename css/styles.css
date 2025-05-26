@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Neuropol';
+  src: url('../fonts/neuropol/Neuropol X Rg.otf') format('truetype'); /* <-- Aquí está el posible error */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer base {
+  body {
+    font-family: 'Neuropol', sans-serif;
+  }
+}

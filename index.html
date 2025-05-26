@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- feat: 🎉 estructura base del portafolio con Tailwind -->
+  <video autoplay muted loop playsinline id="video-fondo" class="fixed top-0 left-0 w-full h-full object-cover z-[-1]">
+    <source src="media/fondo.mp4" type="video/mp4">
+    Tu navegador no soporta videos HTML5.
+  </video
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Portafolio de Jose David Pabón - Desarrollador Backend" />
   <title>Jose David Pabón | Backend Dev</title>
 
-  <!-- TailwindCSS CDN -->
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Archivo de estilos personalizados -->
+  <!-- Estilos personalizados -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
+<body class="bg-black text-cyan-400 scroll-smooth">
 
-<body class="bg-black text-cyan-400 font-halo scroll-smooth">
-  <!-- feat: 🎉 header y navegación -->
-  <header class="sticky top-0 z-50 bg-black/80 backdrop-blur-md p-4 flex justify-between items-center border-b border-cyan-500">
-    <h1 class="text-2xl">Jose David Pabón</h1>
+  <!-- feat: 🎯 header y navegación principal -->
+  <header class="sticky top-0 z-50 bg-black/90 backdrop-blur-md border-b border-cyan-500 p-4 flex justify-between items-center">
+    <h1 class="text-2xl">Jose David</h1>
     <nav class="space-x-4">
       <a href="#sobre-mi" class="hover:text-red-500">Sobre mí</a>
       <a href="#proyectos" class="hover:text-red-500">Proyectos</a>
@@ -26,18 +29,19 @@
   </header>
 
   <main class="space-y-24 px-6 md:px-20 pt-10">
-    <!-- feat: 🧠 sección hero -->
-    <section id="hero" class="transition-opacity duration-700 opacity-0 translate-y-10">
+
+    <!-- feat: 👋 sección de presentación -->
+    <section id="hero" class="transition-all duration-700 opacity-0 translate-y-10">
       <h2 class="text-4xl mb-4">Desarrollador Backend</h2>
       <p class="max-w-2xl">
-        Apasionado por los videojuegos, el anime y la creación de mundos digitales. Entré a la programación para crear mi propio videojuego. Me especializo en backend.
+        Apasionado por los videojuegos, el anime y la creación de mundos digitales. Entré a la programación para desarrollar mi propio videojuego. Me especializo en el backend.
       </p>
     </section>
 
-    <!-- feat: 🧠 sección habilidades -->
-    <section id="sobre-mi" class="transition-opacity duration-700 opacity-0 translate-y-10">
+    <!-- feat: ⚙️ sección habilidades -->
+    <section id="sobre-mi" class="transition-all duration-700 opacity-0 translate-y-10">
       <h3 class="text-3xl mb-2">🧠 Habilidades</h3>
-      <ul class="list-disc list-inside">
+      <ul class="list-disc list-inside space-y-1">
         <li>HTML</li>
         <li>CSS</li>
         <li>Docker</li>
@@ -48,7 +52,7 @@
     </section>
 
     <!-- feat: 🚀 sección proyectos -->
-    <section id="proyectos" class="transition-opacity duration-700 opacity-0 translate-y-10">
+    <section id="proyectos" class="transition-all duration-700 opacity-0 translate-y-10">
       <h3 class="text-3xl mb-6">🛠️ Proyecto Destacado</h3>
       <div class="bg-[#0f0f0f] border-2 border-cyan-500 p-6 rounded-xl shadow-lg">
         <h4 class="text-2xl">Slupergin Mod</h4>
@@ -60,19 +64,19 @@
     </section>
 
     <!-- feat: 📬 sección contacto -->
-    <section id="contacto" class="transition-opacity duration-700 opacity-0 translate-y-10">
+    <section id="contacto" class="transition-all duration-700 opacity-0 translate-y-10">
       <h3 class="text-3xl mb-4">📬 Contacto</h3>
       <p>📧 josedavidpabonpallares@gmail.com</p>
-      <p>🐦 @cronox_808</p>
+      <a href="https://www.instagram.com/cronox_808/" target="_blank">📷 @cronox_808</a>
     </section>
-  </main>
+  </main>a
 
-  <!-- chore: 🛠 despliegue GitHub Pages y pie de página -->
+  <!-- chore: 👣 pie de página -->
   <footer class="text-center text-gray-500 border-t border-cyan-500 mt-20 py-6">
     © 2025 Jose David Pabón. Todos los derechos reservados.
   </footer>
 
-  <!-- feat: ✨ animaciones JS scroll reveal -->
+  <!-- feat: ✨ animaciones scroll reveal -->
   <script>
     const sections = document.querySelectorAll("section");
 
